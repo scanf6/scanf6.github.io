@@ -21,10 +21,11 @@
 
 
 
-@media screen and(min-width: 1200px){
-	.probs{
-		.fa{
-			padding: 17px;
-		}
-	}
+.card{
+	border-radius:0;
+}
+
+a{
+	text-decoration:none;
+	color:white;
 }
