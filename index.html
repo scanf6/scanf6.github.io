@@ -32,7 +32,7 @@
                     <div style="background-color: black; color: white;" class="p-4 font-weight-bold"> Junior Full-Stack Web Developper</div>
 
                     <div class="d-flex flex-row">
-                        <div class="bg-primary p-lg-5 port-item p-3 text-white text-center" data-toggle="collapse" data-target="#home"><i class="fa fa-home"></i><p class="mt-2">Accueil</p></div>
+                        <div class="bg-info p-lg-5 port-item p-3 text-white text-center" data-toggle="collapse" data-target="#home"><i class="fa fa-home"></i><p class="mt-2">Accueil</p></div>
 
                         <div class="bg-success p-lg-5 port-item p-3 text-white text-center" data-toggle="collapse" data-target="#resume"><i class="fa fa-graduation-cap"></i><p class="mt-2">Exp</p></div>
                         
@@ -53,16 +53,30 @@
         <!-- HOME -->
 
         <div id="home" class="collapse show">
-            <div class="card bg-primary text-white p-1">
+            <div class="card bg-info text-white p-1">
                 <div class="card-body">
-                    <h2>My competences</h2>
-                    <p class="lead text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi dolores similique, harum id tempora obcaecati dicta illo facilis vel fugit eaque repellendus saepe hic quas aliquid rem, repudiandae corporis voluptates?</p>
+                    <h2>Mes compétences</h2>
+                    <p class="lead text-justify">Je suis un junior full-stack web developpeur, et je me spécialise en Javascript et NodeJs en particulier. Veuillez trouvez ci dessous une petite évaluation de mes compétences</p>
                 </div>
             </div>
 
             <div class="card">
                 <div class="card-body p-4">
-                    <h4>HTML</h4>
+
+
+                    <div id="accordion">
+  <div class="card">
+    <div class="card-header bg-info" id="headingOne">
+      <h5 class="mb-0">
+        <button class="btn" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          Front-End
+        </button>
+      </h5>
+    </div>
+
+    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+      <div class="card-body">
+        <h4>HTML</h4>
                     <div class="progress mb-4">
                         <div class="progress-bar bg-primary" style="width: 90%"></div>
                     </div>
@@ -82,20 +96,219 @@
                         <div class="progress-bar bg-primary" style="width: 50%"></div>
                     </div>
 
-                     <h4>NodeJS</h4>
-                    <div class="progress mb-4">
-                        <div class="progress-bar bg-primary" style="width: 60%"></div>
-                    </div>
-
-                     <h4>PHP - Laravel</h4>
-                    <div class="progress mb-4">
-                        <div class="progress-bar bg-primary" style="width: 60%"></div>
-                    </div>
-
-                     <h4>Bootstrap</h4>
+                    <h4>Bootstrap</h4>
                     <div class="progress mb-4">
                         <div class="progress-bar bg-primary" style="width: 80%"></div>
                     </div>
+
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="card">
+    <div class="card-header bg-info" id="headingTwo">
+      <h5 class="mb-0">
+        <button class="btn collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+          Back-End
+        </button>
+      </h5>
+    </div>
+    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+      <div class="card-body">
+        <h4>NodeJS</h4>
+                    <div class="progress mb-4">
+                        <div class="progress-bar bg-primary" style="width: 80%"></div>
+                    </div>
+
+                    <h4>Express JS</h4>
+                    <div class="progress mb-4">
+                        <div class="progress-bar bg-primary" style="width: 60%"></div>
+                    </div>
+
+                    <h4>PHP</h4>
+                    <div class="progress mb-4">
+                        <div class="progress-bar bg-primary" style="width: 50%"></div>
+                    </div>
+
+                     <h4>Laravel</h4>
+                    <div class="progress mb-4">
+                        <div class="progress-bar bg-primary" style="width: 30%"></div>
+                    </div>
+      </div>
+    </div>
+  </div>
+
+
+    
+
+    <div class="card">
+    <div class="card-header bg-info" id="headingTwo">
+      <h5 class="mb-0">
+        <button class="btn collapsed" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+          Programming
+        </button>
+      </h5>
+    </div>
+    <div id="collapseFive" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+      <div class="card-body">
+        <h4>Java</h4>
+                    <div class="progress mb-4">
+                        <div class="progress-bar bg-primary" style="width: 50%"></div>
+                    </div>
+
+                    <h4>C#</h4>
+                    <div class="progress mb-4">
+                        <div class="progress-bar bg-primary" style="width: 40%"></div>
+                    </div>
+
+                    <h4>C & C++</h4>
+                    <div class="progress mb-4">
+                        <div class="progress-bar bg-primary" style="width: 20%"></div>
+                    </div>
+
+                    
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+  <div class="card">
+    <div class="card-header bg-info" id="headingTwo">
+      <h5 class="mb-0">
+        <button class="btn collapsed" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+          Réseaux
+        </button>
+      </h5>
+    </div>
+    <div id="collapseSix" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+      <div class="card-body">
+        Niveau CCNA ICND1 & ICND2
+                    
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+  <div class="card">
+    <div class="card-header bg-info" id="headingThree">
+      <h5 class="mb-0">
+        <button class="btn collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          Database
+        </button>
+      </h5>
+    </div>
+    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+      <div class="card-body">
+         <h4>MongoDB</h4>
+                    <div class="progress mb-4">
+                        <div class="progress-bar bg-primary" style="width: 70%"></div>
+                    </div>
+
+        <h4>MySQL</h4>
+                    <div class="progress mb-4">
+                        <div class="progress-bar bg-primary" style="width: 50%"></div>
+                    </div>
+
+        <h4>Oracle</h4>
+                    <div class="progress mb-4">
+                        <div class="progress-bar bg-primary" style="width: 50%"></div>
+                    </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+  <div class="card">
+    <div class="card-header bg-info" id="headingThree">
+      <h5 class="mb-0">
+        <button class="btn collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+          Dev Outils
+        </button>
+      </h5>
+    </div>
+    <div id="collapseFour" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+      <div class="card-body tools">
+         <span class="btn btn-dark">Gulp</span>  
+         <span class="btn btn-dark">Git</span>  
+         <span class="btn btn-dark">Github</span>  
+         <span class="btn btn-dark">Webpack</span>  
+         <span class="btn btn-dark">Heroku</span>
+         <span class="btn btn-dark">Sass</span>
+         <span class="btn btn-dark">BEM</span>
+
+      </div>
+    </div>
+  </div>
+
+
+
+
+    <div class="card">
+    <div class="card-header bg-danger" id="headingTwo">
+      <h5 class="mb-0">
+        <button class="btn collapsed" data-toggle="collapse" data-target="#collapse7" aria-expanded="false" aria-controls="collapse7">
+          Certificats
+        </button>
+      </h5>
+    </div>
+    <div id="collapse7" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+      <div class="card-body">
+
+         <h4>En préparation pour le CCNA R&S</h4>
+                    <div class="progress mb-4">
+                        <div class="progress-bar bg-danger" style="width: 100%"></div>
+                    </div>
+
+        <h4>En préparation pour le Oracle rz170-0</h4>
+                    <div class="progress mb-4">
+                        <div class="progress-bar bg-danger" style="width: 100%"></div>
+                    </div>
+        
+                    
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+</div>
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    
                 </div>
             </div>
         </div>
@@ -111,8 +324,8 @@
         <div id="resume" class="collapse">
             <div class="card bg-success text-white">
                 <div class="card-body">
-                    <h3>Companies i have worked for</h3>
-                    <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique perferendis, possimus pariatur non amet deserunt quidem eveniet eaque vitae labore?</p>
+                    <h3>Mon experience professionnel</h3>
+                    <p class="lead">Veuillez trouver ci dessous les entreprises dans lesquelles j'ai pu acquérir de l'expérience</p>
                 </div>
                 
             </div>
@@ -120,20 +333,18 @@
 
             <div class="card py-4">
                 <div class="card-body">
-                    <div class="card-title"><h2>Where have I worked?</h2></div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione, nobis.</p>
-
-
+                    <div class="card-title"><h2>Entreprises</h2></div>
+                    
                     <div class="row">
                         <div class="col-md-12 col-lg-4">
                             <div class="card mb-3">
                             <div class="card-body">
                             <h3 class="card-title">Bénin Telecom S.A</h3>
                             <div class="card-text">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi magnam facere non fuga tenetur beatae illo ipsam aliquam rerum quidem!
+                                Bénin Télécom S.A est le leader en matière de télécommunications au bénin
                             </div>  
-                            <p class="bg-dark text-white mb-3 p-2 mt-1">Position: Full Stack Developper</p>
-                            <p class="bg-dark text-white mb-3 p-2">Phone: (+229) 97 49 45 11</p>  
+                            <p class="bg-dark text-white mb-3 p-2 mt-1">Position: Ingénieur en télécoms(Stage)</p>
+                            <!--  <p class="bg-dark text-white mb-3 p-2">Phone: (+229) 97 49 45 11</p> --> 
                             </div>
                             <div class="card-footer">
                                 <p class="text-muted">Date: 2011 - 2013</p>
@@ -155,10 +366,10 @@
                             <div class="card-body">
                             <h3 class="card-title">SAHAM Assurance</h3>
                             <div class="card-text">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi magnam facere non fuga tenetur beatae illo ipsam aliquam rerum quidem!
+                                L'une des entreprise d'assurance les plus reconnues en Afrique
                             </div>  
-                            <p class="bg-dark text-white mb-3 p-2 mt-1">Position: Front-End Developper</p>
-                            <p class="bg-dark text-white mb-3 p-2">Phone: (+229) 97 54 10 11</p>  
+                            <p class="bg-dark text-white mb-3 p-2 mt-1">Position: Full-Stack Developper</p>
+                            <!-- <p class="bg-dark text-white mb-3 p-2">Phone: (+229) 97 54 10 11</p> -->  
                             </div>
                             <div class="card-footer">
                                 <p class="text-muted">Date: 2013 - 2015</p>
@@ -166,15 +377,33 @@
                         </div>
                         </div>
 
+
+
+                        <div class="col-md-12 col-lg-4">
+                            <div class="card mb-3">
+                            <div class="card-body">
+                            <h3 class="card-title">Université des télécommunications de Saint-Petersburg</h3>
+                            <div class="card-text">
+                                Stage académique d'un mois en tant que administrateur réseau
+                            </div>  
+                            <p class="bg-dark text-white mb-3 p-2 mt-1">Position: Admin réseau</p>
+                            </div>
+                            <div class="card-footer">
+                                <p class="text-muted">Date: 2017</p>
+                            </div>
+                        </div>
+                        </div>
+
+
+
                         <div class="col-md-12 col-lg-4">
                             <div class="card mb-3">
                             <div class="card-body">
                             <h3 class="card-title">Freelance</h3>
                             <div class="card-text">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi magnam facere non fuga tenetur beatae illo ipsam aliquam rerum quidem!
+                                Mon temps libre est consacré aux activitées de freelance et au dévellopement de mes projets personnels
                             </div>  
-                            <p class="bg-dark text-white mb-3 p-2 mt-1">Position: Back-End Developper</p>
-                            <p class="bg-dark text-white mb-3 p-2">Phone: (+229) 97 49 45 11</p>  
+                            <p class="bg-dark text-white mb-3 p-2 mt-1">Position: Full-Stack Developper ; Programmer</p>
                             </div>
                             <div class="card-footer">
                                 <p class="text-muted">Date: 2015 - 2018</p>
@@ -193,72 +422,162 @@
         <div id="work" class="collapse">
             
                 <div class="card bg-warning text-white p-4">
-            <h2>My Portfolio</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis modi deserunt ex praesentium, saepe itaque.</p>
+            <h2>Mes réalisations</h2>
+            <p>Veuillez trouvez ci bas une liste non-exhaustive de quelques projets que j'ai eu à réaliser</p>
         </div>
 
 
-        <div class="card p-4">
-            <h3>What have i built?</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita, quaerat!</p>
+        <div class="card">
+            
 
             <div class="row no-gutters">
+                
                 <div class="col-sm-6 col-md-3">
-                    <a href="https://unsplash.it/1200/768.jpg?image=253" data-toggle="lightbox">
-                        <img src="https://unsplash.it/600.jpg?image=253" alt="app" class="img-fluid">    
+                    <div class="card m-3">
+                    <div class="card-header">LifProjects</div>
+                    <div class="card-body">
+                    <p><strong>Desciption: </strong>App CRUD de gestion de vos projets en ligne</p>
+                    <p><strong>Statut:</strong>Terminer et deployer</p>
+                    <a target="_blank" href="https://desolate-sands-99965.herokuapp.com" class="text-white btn btn-warning btn-block">Visiter!</a>
+                    <a href="img/lifproject.png" data-toggle="lightbox">
+                        <img src="img/lifproject.png" alt="app" class="img-fluid">    
                     </a>
-                        
+                    </div>    
+                </div>
                 </div>
 
-                <div class="col-sm-6 col-md-3">
-                    <a href="https://unsplash.it/1200/768.jpg?image=258" data-toggle="lightbox">
-                        <img src="https://unsplash.it/600.jpg?image=258" alt="app" class="img-fluid">    
-                    </a>
-                        
-                </div>
+
 
                 <div class="col-sm-6 col-md-3">
-                    <a href="https://unsplash.it/1200/768.jpg?image=260" data-toggle="lightbox">
-                        <img src="https://unsplash.it/600.jpg?image=260" alt="app" class="img-fluid">    
+                    <div class="card m-3">
+                    <div class="card-header">API todos</div>
+                    <div class="card-body">
+                    <p><strong>Desciption: </strong>API liste de tâche, utilisable dans vos projets</p>
+                    <p><strong>Statut:</strong>Terminer et deployer</p>
+                    <a target="_blank" href="https://enigmatic-everglades-72328.herokuapp.com/todo" class="text-white btn btn-warning btn-block">Visiter!</a>
+                    <a href="img/todoapi.png" data-toggle="lightbox">
+                        <img src="img/todoapi.png" alt="app" class="img-fluid">    
                     </a>
-                        
+                    </div>    
                 </div>
+                </div>
+
+
+
+
 
                 <div class="col-sm-6 col-md-3">
-                    <a href="https://unsplash.it/1200/768.jpg?image=225" data-toggle="lightbox">
-                        <img src="https://unsplash.it/600.jpg?image=225" alt="app" class="img-fluid">    
+                    <div class="card m-3">
+                    <div class="card-header">API Management</div>
+                    <div class="card-body">
+                    <p><strong>Desciption: </strong>Dashboard user pour gérer les entrées dans l'API</p>
+                    <p><strong>Statut:</strong>Terminer , rester a déployer</p>
+                    <a target="_blank" href="#" class="disabled text-white btn btn-warning btn-block">Visiter!</a>
+                    <a href="img/apidashboard.png" data-toggle="lightbox">
+                        <img src="img/apidashboard.png" alt="app" class="img-fluid">    
                     </a>
-                        
+                    </div>    
                 </div>
+                </div>
+
+
+
 
                 <div class="col-sm-6 col-md-3">
-                    <a href="https://unsplash.it/1200/768.jpg?image=240" data-toggle="lightbox">
-                        <img src="https://unsplash.it/600.jpg?image=240" alt="app" class="img-fluid">    
+                    <div class="card m-3">
+                    <div class="card-header">IT-Phones</div>
+                    <div class="card-body">
+                    <p><strong>Desciption: </strong>Site de présentation de "IT-phones", entreprise fictive de vente de téléphones de dernière génération</p>
+                    <p><strong>Statut:</strong>Terminer , rester a déployer</p>
+                    <a target="_blank" href="#" class="disabled text-white btn btn-warning btn-block">Visiter!</a>
+                    <a href="img/itphones.png" data-toggle="lightbox">
+                        <img src="img/itphones.png" alt="app" class="img-fluid">    
                     </a>
-                        
+                    </div>    
                 </div>
+                </div>
+
+
+
+
 
                 <div class="col-sm-6 col-md-3">
-                    <a href="https://unsplash.it/1200/768.jpg?image=278" data-toggle="lightbox">
-                        <img src="https://unsplash.it/600.jpg?image=278" alt="app" class="img-fluid">    
+                    <div class="card m-3">
+                    <div class="card-header">Mizuxe</div>
+                    <div class="card-body">
+                    <p><strong>Desciption: </strong>Les meilleurs E-books en lignes</p>
+                    <p><strong>Statut:</strong>Terminer , rester a déployer</p>
+                    <a target="_blank" href="#" class="disabled text-white btn btn-warning btn-block">Visiter!</a>
+                    <a href="img/mizuxe.png" data-toggle="lightbox">
+                        <img src="img/mizuxe.png" alt="app" class="img-fluid">    
                     </a>
-                        
+                    </div>    
                 </div>
+                </div>
+
+
+
+
+
 
                 <div class="col-sm-6 col-md-3">
-                    <a href="https://unsplash.it/1200/768.jpg?image=279" data-toggle="lightbox">
-                        <img src="https://unsplash.it/600.jpg?image=279" alt="app" class="img-fluid">    
+                    <div class="card m-3">
+                    <div class="card-header">CodeTalks</div>
+                    <div class="card-body">
+                    <p><strong>Desciption: </strong>Le forum des developpeur web</p>
+                    <p><strong>Statut:</strong>En cours...</p>
+                    <a target="_blank" href="#" class="disabled text-white btn btn-warning btn-block">Visiter!</a>
+                    <a href="img/codetalks.png" data-toggle="lightbox">
+                        <img src="img/codetalks.png" alt="app" class="img-fluid">    
                     </a>
-                        
+                    </div>    
                 </div>
+                </div>
+
+
+
+
 
                 <div class="col-sm-6 col-md-3">
-                    <a href="https://unsplash.it/1200/768.jpg?image=266" data-toggle="lightbox">
-                        <img src="https://unsplash.it/600.jpg?image=266" alt="app" class="img-fluid">    
+                    <div class="card m-3">
+                    <div class="card-header">Biz.com</div>
+                    <div class="card-body">
+                    <p><strong>Desciption: </strong>E-commerce Laravel</p>
+                    <p><strong>Statut:</strong>En cours</p>
+                    <a target="_blank" href="#" class="disabled text-white btn btn-warning btn-block">Visiter!</a>
+                    <a href="img/laravel-ecom.png" data-toggle="lightbox">
+                        <img src="img/laravel-ecom.png" alt="app" class="img-fluid">    
                     </a>
-                        
+                    </div>    
+                </div>
                 </div>
 
+
+
+
+
+                <div class="col-sm-6 col-md-3">
+                    <div class="card m-3">
+                    <div class="card-header">Buddy Chat</div>
+                    <div class="card-body">
+                    <p><strong>Desciption: </strong>Chat online</p>
+                    <p><strong>Statut:</strong>En cours...</p>
+                    <a target="_blank" href="#" class="disabled text-white btn btn-warning btn-block">Visiter!</a>
+                    <a href="img/socket.png" data-toggle="lightbox">
+                        <img src="img/socket.png" alt="app" class="img-fluid">    
+                    </a>
+                    </div>    
+                </div>
+                </div>
+
+
+
+
+
+
+
+                
+                
             </div>
             
         </div>
@@ -275,18 +594,17 @@
 
         <div id="contact" class="collapse">
             <div class="card bg-danger p-4 text-white">
-                <h2>Contact Me</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse architecto ea nisi, dicta cum numquam.</p>
+                <h2>Contactez moi</h2>
+                <p>Vous trouverez les liens vers mes contact au haut de la page, n'hésitez pas a me contactez sur facebook , par mail...</p>
             </div>
 
             <div class="card p-4">
-                <h3>Get in touch</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                <h3>Ecivez moi</h3>
                 
                 <div class="form-group">
                     <div class="input-group">
                         <span class="input-group-addon bg-danger text-white"><i class="fa fa-user"></i></span>
-                        <input type="text" class="form-control" placeholder="Enter your name">
+                        <input type="text" class="form-control" placeholder="Entrer votre nom..." required>
                             
                         </div>
                     </div>
@@ -295,7 +613,7 @@
                                     <div class="form-group">
                     <div class="input-group">
                         <span class="input-group-addon bg-danger text-white"><i class="fa fa-envelope"></i></span>
-                        <input type="text" class="form-control" placeholder="Enter your mail">
+                        <input type="text" class="form-control" placeholder="Entrer votre mail..." required>
                             
                         </div>
                     </div>
@@ -304,7 +622,7 @@
                                     <div class="form-group">
                     <div class="input-group">
                         <span class="input-group-addon bg-danger text-white"><i class="fa fa-pencil"></i></span>
-                        <textarea class="form-control" placeholder="Enter your message" rows="7"></textarea>   
+                        <textarea class="form-control" placeholder="Votre message..." rows="7"></textarea>   
                             
                         </div>
                     </div>
@@ -328,7 +646,7 @@
 
 
         <footer class="bg-dark text-white p-4">
-            <a href="https://scanf6.github.io/CV_LOUEKE_Patrick.docx" class="btn btn-outline-light"><i class="fa fa-download"></i> Download resume</a>
+            <a href="https://scanf6.github.io/CV_LOUEKE_Patrick.docx" class="btn btn-outline-light"><i class="fa fa-download"></i> Télécharger mon CV</a>
         </footer>
 
     </div>
