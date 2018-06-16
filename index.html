@@ -599,12 +599,13 @@
             </div>
 
             <div class="card p-4">
-                <h3>Ecivez moi</h3>
+                <div class="afterMail alert alert-success"></div>
+                <h3>Ecrivez moi</h3>
                 
                 <div class="form-group">
                     <div class="input-group">
                         <span class="input-group-addon bg-danger text-white"><i class="fa fa-user"></i></span>
-                        <input type="text" class="form-control" placeholder="Entrer votre nom..." required>
+                        <input type="text" name="nom" class="form-control" placeholder="Entrer votre nom..." required>
                             
                         </div>
                     </div>
@@ -613,7 +614,7 @@
                                     <div class="form-group">
                     <div class="input-group">
                         <span class="input-group-addon bg-danger text-white"><i class="fa fa-envelope"></i></span>
-                        <input type="text" class="form-control" placeholder="Entrer votre mail..." required>
+                        <input type="text" name="mail" class="form-control" placeholder="Entrer votre mail..." required>
                             
                         </div>
                     </div>
@@ -622,13 +623,13 @@
                                     <div class="form-group">
                     <div class="input-group">
                         <span class="input-group-addon bg-danger text-white"><i class="fa fa-pencil"></i></span>
-                        <textarea class="form-control" placeholder="Votre message..." rows="7"></textarea>   
+                        <textarea class="form-control message" name="message" placeholder="Votre message..." rows="7"></textarea>   
                             
                         </div>
                     </div>
 
                     <div class="form-group">
-                        <input type="submit" class="form-control btn btn-danger btn-block text-white">
+                        <input type="submit" class="mailSend form-control btn btn-danger btn-block text-white">
                     </div>
                 </div>
 
@@ -659,18 +660,53 @@
     <script src="js/jquery.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+
     <script type="text/javascript">
+        $('.afterMail').hide();
         $(".port-item").click(function () {
             $(".collapse").collapse("hide");
         })
     </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.js"></script>
 
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.js"></script>
     <script>
         $(document).on('click', '[data-toggle="lightbox"]', function(event) {
                 event.preventDefault();
                 $(this).ekkoLightbox();
             });
+    </script>
+
+
+
+    <script>
+        $('.mailSend').on('click',function () {
+            var nom=$('[name=nom]').val();
+            var mail=$('[name=mail]').val();
+            var message=$('[name=message]').val();
+            if(nom=="" || mail=="" || message==""){
+                return alert('Veuillez renseigner votre nom, mail et votre message puis envoyer le mail');
+            }
+            $.ajax({
+                    url: "https://enigmatic-everglades-72328.herokuapp.com/portfolio",  //http://localhost:3000/portfolio/
+                    type:'POST',
+                    data:{
+                        nom:nom,
+                        mail:mail,
+                        message:message
+                    },
+                    success: function(result){
+                                console.log(result);
+                                $('.afterMail').text(result);
+                                $('.afterMail').show();
+                                $('input[name="nom"]').val('');
+                                $('input[name="mail"]').val('');
+                                $('.message').val('');
+                                }
+                    });
+        })
     </script>
     
 </body>
